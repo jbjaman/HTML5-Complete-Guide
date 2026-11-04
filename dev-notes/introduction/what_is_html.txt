@@ -3,3 +3,174 @@ Question: What is HTML?
 HTML (হাইপারটেক্সট মার্কআপ ল্যাঙ্গুয়েজ) হলো ওয়েব পেজ তৈরি করার জন্য স্ট্যান্ডার্ড মার্কআপ ভাষা। এটি একটি ওয়েবপেজের কাঠামো প্রদান করে, যেখানে ট্যাগ ব্যবহার করে হেডিং, প্যারাগ্রাফ, ছবি এবং লিঙ্কের মতো উপাদানগুলো সংজ্ঞায়িত করা হয়। ওয়েব ব্রাউজার এই ট্যাগগুলোকে ব্যাখ্যা করে ব্যবহারকারীর কাছে কন্টেন্ট প্রদর্শন করে।
 
 HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the structure of a webpage, defining elements like headings, paragraphs, images, and links using tags. Web browsers interpret these tags to display the content to users.
+
+//------------------------
+
+Quesion: HTML5 কী?
+
+HTML5 হলো HTML-এর একটি গুরুত্বপূর্ণ আধুনিক সংস্করণ, যেখানে নতুন Semantic Elements, Multimedia Support এবং Form Features যুক্ত হয়েছে।
+
+HTML5-এর গুরুত্বপূর্ণ Features:
+
+- Semantic Elements: header, footer, nav, main
+- Audio ও Video Support
+- Improved Form Input Types
+- Canvas Element
+- Local Storage Support
+
+HTML5 is the modern version of HTML. It introduced semantic elements, native audio and video support, improved form controls, and other features for building modern web applications.
+
+Quesion: HTML Tag
+
+Tag হলো HTML-এর একটি keyword, যা angle brackets-এর মধ্যে লেখা হয়।
+
+Quesion: HTML Element
+
+Opening Tag, Content এবং Closing Tag মিলে একটি Element তৈরি হয়।
+
+Question: HTML Attribute
+
+Attribute কোনো Element-এর অতিরিক্ত Information প্রদান করে।
+
+<a href="https://example.com">Visit Website</a>
+
+এখানে:
+- a = Tag
+- সম্পূর্ণ <a>...</a> = Element
+- href = Attribute
+- URL = Attribute Value
+
+A tag defines an HTML element's opening or closing boundary. An element consists of the opening tag, content, and closing tag. Attributes provide additional information about an element.
+
+Question: Semantic vs Non-semantic Elements
+
+Semantic মানে হলো Meaningful। Semantic HTML Elements এমন Elements, যেগুলোর নাম দেখেই বোঝা যায় সেগুলো কী ধরনের Content বা Section নির্দেশ করে।
+
+Semantic:
+
+header
+Page বা Section-এর Header
+
+nav
+Navigation Links
+
+main
+Main Content
+
+footer
+Footer Content
+
+Non-semantic :
+
+div
+Generic Container
+
+span
+Generic Inline Container
+
+কেন Semantic HTML ব্যবহার করব?
+
+1. Code সহজে বোঝা যায়।
+2. Maintain করা সহজ হয়।
+3. Search Engine Optimization (SEO)-এ সাহায্য করে।
+4. Accessibility উন্নত করে।
+
+Semantic elements clearly describe the meaning of their content, such as header, nav, main, and footer. Non-semantic elements like div and span do not describe their content's meaning. Semantic HTML improves readability, accessibility, and SEO.
+
+Question: Block vs Inline Elements
+
+Block Element সাধারণত নতুন লাইন থেকে শুরু হয় এবং উপলব্ধ পুরো Width নিতে পারে।
+
+উদাহরণ:
+- div
+- p
+- h1 – h6
+- section
+- article
+
+Inline Element নতুন লাইন থেকে শুরু হয় না। Content যতটুকু জায়গা প্রয়োজন ততটুকুই নেয়।
+
+- span
+- a
+- strong
+- em
+- label
+
+Block elements start on a new line and generally take the available full width. Inline elements do not start on a new line and take only the space required by their content.
+
+Question: HTML Forms ও Input Types
+
+Element	কাজ
+form	Form তৈরি করে
+label	Input-এর পরিচয় দেয়
+input	User-এর Data নেয়
+button	Action সম্পন্ন করে
+select	Dropdown তৈরি করে
+textarea	Multiple-line Text নেয়
+
+Type	ব্যবহার
+text	সাধারণ Text
+email	Email Address
+password	Password
+number	Numeric Input
+date	Date Selection
+radio	একটি Option নির্বাচন
+checkbox	এক বা একাধিক Option
+file	File Upload
+submit	Form Submit
+
+Question: HTML Form Validation
+
+HTML নিজেই কিছু Basic Validation করতে পারে।
+
+Question: ID vs Class
+
+দুটিই HTML Element-কে Identify করার জন্য ব্যবহার করা হয়।
+
+ID   ||	 Class
+একটি নির্দিষ্ট Element-এর জন্য Unique হওয়া উচিত	|| একাধিক Element-এ ব্যবহার করা যায়
+CSS-এ # দিয়ে Select করা হয় || CSS-এ . দিয়ে Select করা হয়
+JavaScript-এ getElementById() ব্যবহার করা যায় || getElementsByClassName() ব্যবহার করা যায়
+
+Question: localStorage vs sessionStorage
+
+দুটিই Browser-এর মধ্যে Data Store করতে সাহায্য করে।
+
+localStorage || sessionStorage
+Browser Session-এর পরেও Data থাকে || নির্দিষ্ট Tab-এর Session পর্যন্ত থাকে
+Browser বন্ধ করলেও সাধারণত Data থাকে || Tab বন্ধ করলে Data মুছে যায়
+একই Origin-এর Tabs-এ Share হয় || আলাদা Tab-এর জন্য আলাদা
+
+// localStorage
+localStorage.setItem("name", "Rahim");
+
+const name = localStorage.getItem("name");
+
+// sessionStorage
+sessionStorage.setItem("user", "Rahim");
+
+const user = sessionStorage.getItem("user");
+
+Data Remove:
+
+localStorage.removeItem("name");
+
+sessionStorage.clear();
+
+এখানে সাধারণত String Data Store হয়। Object Store করতে JSON ব্যবহার করতে হয়।
+
+const user = {
+  name: "Rahim",
+  age: 25
+};
+
+localStorage.setItem(
+  "user",
+  JSON.stringify(user)
+);
+
+const savedUser = JSON.parse(
+  localStorage.getItem("user")
+);
+
+Password বা Sensitive Information সাধারণত Browser Storage-এ রাখা উচিত নয়।

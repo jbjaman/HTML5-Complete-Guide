@@ -1,0 +1,19 @@
+Q1. What is HTML and why is it not a programming language?
+
+Answer: HTML is a markup language used to structure web content. It is not a programming language because it does not provide programming logic or execute calculations.
+
+Q2. What is the difference between semantic and non-semantic elements?
+
+Answer: Semantic elements describe the meaning of their content, while non-semantic elements like div and span do not provide specific meaning.
+
+Q3. What is the difference between block and inline elements?
+
+Answer: Block elements start on a new line and generally take the available full width, whereas inline elements take only the required space.
+
+Q4. What is the difference between ID and Class?
+
+Answer: ID is used to uniquely identify an element, while Class can be used by multiple elements for styling and grouping.
+
+Q5. What is the difference between localStorage and sessionStorage?
+
+Answer: localStorage keeps data even after the browser is closed, while sessionStorage stores data for a particular tab session.
