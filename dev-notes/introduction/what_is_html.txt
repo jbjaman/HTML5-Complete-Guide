@@ -42,6 +42,29 @@ Attribute কোনো Element-এর অতিরিক্ত Information প�
 
 A tag defines an HTML element's opening or closing boundary. An element consists of the opening tag, content, and closing tag. Attributes provide additional information about an element.
 
+Question: Void element
+
+<img src="photo.jpg" alt="Photo">
+
+<br>
+
+<hr>
+
+<input type="text">
+
+<meta charset="UTF-8">
+
+কিছু HTML Element-এর Closing Tag লাগে না। এগুলোকে Void Elements বলা হয়।
+
+Question: headings
+
+<h1>Main Heading</h1>
+<h2>Sub Heading</h2>
+<h3>Section Heading</h3>
+<h4>Subsection</h4>
+<h5>Smaller Heading</h5>
+<h6>Smallest Heading</h6>
+
 Question: Semantic vs Non-semantic Elements
 
 Semantic মানে হলো Meaningful। Semantic HTML Elements এমন Elements, যেগুলোর নাম দেখেই বোঝা যায় সেগুলো কী ধরনের Content বা Section নির্দেশ করে।
@@ -57,6 +80,15 @@ Navigation Links
 main
 Main Content
 
+section
+Related Content-এর Section
+
+article
+স্বতন্ত্র Content
+
+aside	
+মূল Content-এর পাশের সম্পর্কিত Content
+
 footer
 Footer Content
 
@@ -70,10 +102,10 @@ Generic Inline Container
 
 কেন Semantic HTML ব্যবহার করব?
 
-1. Code সহজে বোঝা যায়।
-2. Maintain করা সহজ হয়।
-3. Search Engine Optimization (SEO)-এ সাহায্য করে।
-4. Accessibility উন্নত করে।
+1. Readability: Developer সহজে Code বুঝতে পারে।
+2. Maintainability: বড় Project-এর Code Maintain করা সহজ হয়।
+3. SEO: Search Engine-কে Page-এর Structure বুঝতে সাহায্য করে।
+4. Accessibility: Screen Reader-এর মতো Assistive Technology Content বুঝতে সাহায্য পায়।
 
 Semantic elements clearly describe the meaning of their content, such as header, nav, main, and footer. Non-semantic elements like div and span do not describe their content's meaning. Semantic HTML improves readability, accessibility, and SEO.
 
@@ -100,6 +132,18 @@ Block elements start on a new line and generally take the available full width. 
 
 Question: HTML Forms ও Input Types
 
+Attribute	কাজ
+action	Form Data কোথায় Submit হবে
+method	GET বা POST Request Method
+name	Submitted Data-এর Field Name
+id	Element-কে Uniqueভাবে Identify করা
+required	Field Required করা
+placeholder	Input Hint
+disabled	Input Disable
+readonly	User-এর Editing বন্ধ রাখা
+minlength	Minimum Character Length
+maxlength	Maximum Character Length
+
 Element	কাজ
 form	Form তৈরি করে
 label	Input-এর পরিচয় দেয়
@@ -118,6 +162,13 @@ radio	একটি Option নির্বাচন
 checkbox	এক বা একাধিক Option
 file	File Upload
 submit	Form Submit
+
+GET	POST
+Data URL-এর Query Parameters-এ যায়	Data Request Body-তে যায়
+সাধারণত Data Retrieve করতে ব্যবহৃত হয়	সাধারণত Data Submit করতে ব্যবহৃত হয়
+URL-এ Parameters দেখা যায়	URL-এ Request Body দেখা যায় না
+Sensitive Data-এর জন্য উপযুক্ত নয়	নিজে থেকে Secure নয়
+
 
 Question: HTML Form Validation
 
@@ -174,3 +225,18 @@ const savedUser = JSON.parse(
 );
 
 Password বা Sensitive Information সাধারণত Browser Storage-এ রাখা উচিত নয়।
+
+Question: HTML Accessibility
+
+Accessibility মানে এমনভাবে Website তৈরি করা, যাতে বিভিন্ন ধরনের ব্যবহারকারী Website ব্যবহার করতে পারেন।
+
+Web accessibility means making websites usable by people with different abilities. We can improve accessibility by using semantic HTML, proper labels, alternative text for images, keyboard navigation, and sufficient color contrast.
+
+গুরুত্বপূর্ণ বিষয়:
+- Images-এ উপযুক্ত alt Text।
+- Form-এ Label।
+- Button-এর সঠিক Semantic ব্যবহার।
+- Keyboard Navigation।
+- সঠিক Heading Structure।
+- যথেষ্ট Color Contrast।
+- প্রয়োজনে ARIA Attributes।
